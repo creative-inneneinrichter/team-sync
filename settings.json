@@ -1,0 +1,53 @@
+// User settings for the whole team, same format as the VS Code settings.json.
+// After editing regenerate team-config.json, see README.md.
+// A value of null removes the setting from the users' settings. A setting deleted from
+// this file is reset on clients that still have the team value (personal changes stay).
+{
+    // Editor
+    "window.commandCenter": true,
+    "files.defaultLanguage": "markdown",
+    "editor.suggest.showWords": false,
+    "editor.snippetSuggestions": "top",
+
+    // Markdown preview and validation
+    "markdown.preview.breaks": true,
+    "markdown.preview.typographer": true,
+    "markdown.math.enabled": false,
+    "markdown.validate.enabled": true,
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // Spell checking German and English
+    "cSpell.language": "de-DE,en",
+
+    // Team Sync: Markdown formatting
+    "teamSync.markdown.bulletMarker": "-",
+    "teamSync.markdown.boldMarker": "**",
+    "teamSync.markdown.italicMarker": "_",
+
+    // Team Sync: toolbar buttons in Markdown files
+    "teamSync.markdown.toolbar.heading": true,
+    "teamSync.markdown.toolbar.bold": true,
+    "teamSync.markdown.toolbar.bullets": true,
+    "teamSync.markdown.toolbar.numbers": true,
+    "teamSync.markdown.toolbar.link": true,
+    "teamSync.markdown.toolbar.table": true,
+    "teamSync.markdown.toolbar.copyAsHtml": true,
+    "teamSync.markdown.toolbar.more": true,
+    "teamSync.markdown.toolbar.previewCopyAsHtml": true,
+
+    // Team Sync: "Markdown: Als HTML kopieren" (HTML for the shop)
+    "teamSync.markdown.tableClass": "table table-sm align-top table-hover",
+    "teamSync.markdown.removeEmptyTableHeader": true,
+    "teamSync.markdown.breaks": true,
+    "teamSync.markdown.linkify": true,
+    "teamSync.markdown.typographer": true,
+    "teamSync.markdown.quotes": "„“‚‘",
+    "teamSync.markdown.html": false
+}

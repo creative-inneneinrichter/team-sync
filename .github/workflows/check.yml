@@ -1,0 +1,29 @@
+name: Check team config
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: config
+      - uses: actions/checkout@v7
+        with:
+          repository: marnis-tech/team-sync
+          path: tool
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Check that team-config.json matches settings.json and extensions.json
+        working-directory: tool
+        run: |
+          npm ci
+          npm run team-config -- --dir ../config --check

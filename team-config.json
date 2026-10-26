@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "extensions": {
+    "install": [
+      "streetsidesoftware.code-spell-checker",
+      "streetsidesoftware.code-spell-checker-german",
+      "yzhang.markdown-all-in-one",
+      "esbenp.prettier-vscode",
+      "inu1255.easy-snippet"
+    ]
+  },
+  "settings": {
+    "window.commandCenter": true,
+    "files.defaultLanguage": "markdown",
+    "editor.suggest.showWords": false,
+    "editor.snippetSuggestions": "top",
+    "markdown.preview.breaks": true,
+    "markdown.preview.typographer": true,
+    "markdown.math.enabled": false,
+    "markdown.validate.enabled": true,
+    "[markdown]": {
+      "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+      },
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cSpell.language": "de-DE,en",
+    "teamSync.markdown.bulletMarker": "-",
+    "teamSync.markdown.boldMarker": "**",
+    "teamSync.markdown.italicMarker": "_",
+    "teamSync.markdown.toolbar.heading": true,
+    "teamSync.markdown.toolbar.bold": true,
+    "teamSync.markdown.toolbar.bullets": true,
+    "teamSync.markdown.toolbar.numbers": true,
+    "teamSync.markdown.toolbar.link": true,
+    "teamSync.markdown.toolbar.table": true,
+    "teamSync.markdown.toolbar.copyAsHtml": true,
+    "teamSync.markdown.toolbar.more": true,
+    "teamSync.markdown.toolbar.previewCopyAsHtml": true,
+    "teamSync.markdown.tableClass": "table table-sm align-top table-hover",
+    "teamSync.markdown.removeEmptyTableHeader": true,
+    "teamSync.markdown.breaks": true,
+    "teamSync.markdown.linkify": true,
+    "teamSync.markdown.typographer": true,
+    "teamSync.markdown.quotes": "„“‚‘",
+    "teamSync.markdown.html": false
+  }
+}
